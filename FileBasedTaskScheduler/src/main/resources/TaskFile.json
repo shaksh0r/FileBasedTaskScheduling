@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "task1",
+      "type": "function",
+      "name": "printNumbers",
+      "code": "for(int i=1; i<=10; i++) { System.out.println(i); }",
+      "priority": "high",
+      "dependencies": ["task1"]
+    },
+    {
+      "id": "task2",
+      "type": "class",
+      "name": "HelloWorld",
+      "code": "public class HelloWorld { public void sayHello() { System.out.println(\"Hello, World!\"); } }",
+      "priority": "medium",
+      "dependencies": ["task2"]
+    },
+    {
+      "id": "task3",
+      "type": "function",
+      "name": "callHelloWorld",
+      "code": "HelloWorld hw = new HelloWorld(); hw.sayHello();",
+      "priority": "high",
+      "dependencies": ["task3"]
+    },
+    {
+      "id": "task4",
+      "type": "loop",
+      "name": "countdown",
+      "code": "for(int i=10; i>=1; i--) { System.out.println(i); }",
+      "priority": "low",
+      "dependencies": ["task4"]
+    }
+  ]
+}
